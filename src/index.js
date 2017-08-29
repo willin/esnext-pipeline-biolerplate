@@ -8,11 +8,7 @@ function exclaim(str) {
   return `${str}!`;
 }
 
-let result = "hello"
-  |> doubleSay
-  |> capitalize
-  |> exclaim;
+let result = "hello" |> doubleSay |> capitalize |> exclaim;
 
-result
-  |> console.log;
+result |> console.log;
 //=> "Hello, hello!"

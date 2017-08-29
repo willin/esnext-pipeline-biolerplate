@@ -3,7 +3,6 @@
     "env"
   ],
   "plugins": [
-    "transform-pipeline",
-    "syntax-pipeline"
+    "transform-pipeline"
   ]
 }
