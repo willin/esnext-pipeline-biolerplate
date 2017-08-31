@@ -9,11 +9,11 @@
   "author": "Willin Wang <willin@willin.org>",
   "license": "MIT",
   "devDependencies": {
+    "@airdwing/babylon": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-env": "^2.4.1",
     "babel-eslint": "^7.2.3",
-    "babel-plugin-transform-pipeline": "^0.1.0",
+    "babel-plugin-transform-pipeline-operator": "^1.0.2",
     "eslint": "^4.5.0",
     "eslint-config-dwing": "^1.1.0"
   }
