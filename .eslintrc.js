@@ -1,5 +1,5 @@
 module.exports = {
   root: true,
   extends: 'dwing',
-  parser: 'babel-eslint'
+  parser: '@airdwing/babel-eslint'
 };
