@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "babel-node ."
+    "start": "yarn run build && node dist/",
+    "build": "yarn run clean && rollup -c",
+    "clean": "rimraf dist"
   },
   "repository": "git@github.com:willin/esnext-pipeline-biolerplate.git",
   "author": "Willin Wang <willin@willin.org>",
@@ -15,6 +17,10 @@
     "babel-core": "^6.26.0",
     "babel-plugin-transform-pipeline-operator": "^1.0.2",
     "eslint": "^4.5.0",
-    "eslint-config-dwing": "^1.1.0"
+    "eslint-config-dwing": "^1.1.0",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.49.2",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
