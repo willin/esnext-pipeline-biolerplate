@@ -1,14 +1,5 @@
-function doubleSay(str) {
-  return `${str}, ${str}`;
-}
-function capitalize(str) {
-  return str[0].toUpperCase() + str.substring(1);
-}
-function exclaim(str) {
-  return `${str}!`;
-}
+const _ = require('pipefn');
 
-const result = 'hello' |> doubleSay |> capitalize |> exclaim;
+const result = [1, 2, 3, 4, 5] |> _([].concat, [6, 7, 8, 9, 0]);
 
 console.log(result);
-//= > "Hello, hello!"

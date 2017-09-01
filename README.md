@@ -21,7 +21,7 @@ $ yarn run build && node dist/
 
 src/index.js → dist/index.js...
 created dist/index.js in 95ms
-Hello, hello!
+[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]
 Done in 2.70s.
 ```
 

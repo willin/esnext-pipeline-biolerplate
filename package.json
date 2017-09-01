@@ -22,5 +22,8 @@
     "rollup": "^0.49.2",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "dependencies": {
+    "pipefn": "^1.0.1"
   }
 }
