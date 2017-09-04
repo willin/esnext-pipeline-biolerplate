@@ -3,6 +3,6 @@
     "parser": "@airdwing/babylon"
   },
   "plugins": [
-    "transform-pipeline-operator"
+    "transform-pipeline"
   ]
 }
