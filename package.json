@@ -11,20 +11,20 @@
   "repository": "git@github.com:willin/esnext-pipeline-biolerplate.git",
   "author": "Willin Wang <willin@willin.org>",
   "license": "MIT",
+  "dependencies": {
+    "pipefn": "^1.0.1",
+    "source-map-support": "^0.4.17"
+  },
   "devDependencies": {
     "@airdwing/babel-eslint": "^8.0.0-alpha.17",
     "@airdwing/babylon": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-plugin-transform-pipeline": "https://github.com/AirDwing/babel-plugin-transform-pipeline.git",
-    "eslint": "^4.5.0",
+    "eslint": "^4.6.1",
     "eslint-config-dwing": "^1.1.0",
     "rimraf": "^2.6.1",
     "rollup": "^0.49.2",
     "rollup-plugin-babel": "^3.0.2"
-  },
-  "dependencies": {
-    "pipefn": "^1.0.1",
-    "source-map-support": "^0.4.17"
   }
 }
