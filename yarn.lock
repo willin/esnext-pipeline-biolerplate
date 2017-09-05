@@ -271,9 +271,9 @@ babel-plugin-syntax-pipeline@0.1.0:
   dependencies:
     babylon "6.13.0"
 
-"babel-plugin-transform-pipeline@https://github.com/AirDwing/babel-plugin-transform-pipeline.git":
+"babel-plugin-transform-pipeline@https://github.com/AirDwing/babel-plugin-transform-pipeline.git#master":
   version "0.1.0"
-  resolved "https://github.com/AirDwing/babel-plugin-transform-pipeline.git#e961f89864f7bfea6d478f31b653354164666c30"
+  resolved "https://github.com/AirDwing/babel-plugin-transform-pipeline.git#c02f82946370f685d87d8fd2ea5f0fb44866641e"
   dependencies:
     babel-plugin-syntax-pipeline "0.1.0"
     babel-template "^6.26.0"

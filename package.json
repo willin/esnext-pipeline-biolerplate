@@ -5,7 +5,8 @@
   "scripts": {
     "start": "yarn run build && node dist/",
     "build": "yarn run clean && rollup -c",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "postinstall": "cd node_modules/babel-plugin-transform-pipeline && yarn"
   },
   "repository": "git@github.com:willin/esnext-pipeline-biolerplate.git",
   "author": "Willin Wang <willin@willin.org>",
