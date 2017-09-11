@@ -1,0 +1,11 @@
+#! /usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+const { spawnSync } = require('child_process');
+
+fs.exists('node_modules/babel-plugin-transform-pipeline/lib', (e) => {
+  if (e) return;
+  spawnSync('yarn', {
+    cwd: path.join(__dirname, '../node_modules/babel-plugin-transform-pipeline')
+  });
+});

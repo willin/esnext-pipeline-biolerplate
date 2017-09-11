@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "yarn run build && node dist/",
-    "build": "yarn run clean && rollup -c",
-    "clean": "rimraf dist",
-    "postinstall": "cd node_modules/babel-plugin-transform-pipeline && yarn"
+    "start": "babel-node src",
+    "build": "NODE_ENV=production webpack --config webpack.config.js --progress --hide-modules",
+    "postinstall": "node ./bin/postinstall"
   },
   "repository": "git@github.com:willin/esnext-pipeline-biolerplate.git",
   "author": "Willin Wang <willin@willin.org>",
@@ -20,11 +19,15 @@
     "@airdwing/babylon": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
     "babel-plugin-transform-pipeline": "https://github.com/AirDwing/babel-plugin-transform-pipeline.git",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
     "eslint": "^4.6.1",
     "eslint-config-dwing": "^1.1.0",
     "rimraf": "^2.6.1",
-    "rollup": "^0.49.2",
-    "rollup-plugin-babel": "^3.0.2"
+    "webpack": "^3.5.6",
+    "webpack-node-externals": "^1.6.0"
   }
 }
